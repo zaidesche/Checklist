@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="application.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>Bread Objectives</title>
+</head>
+
+<body>
+    <!-- Heading -->
+    <div id="heading">
+        <div class="wrapper">
+            <div id="name">
+                 <h1>Bread Objectives</h1>
+            </div>
+            <div id="maincontrols">
+                <div class="maincontrols" id="rename">Rename List</div>
+                <div class="maincontrols" id="clearList">Clear List</div>
+            </div>
+        </div>
+    </div>
+    <!-- Incomplete Checklist Items -->
+    <div class="wrapper" id="main">
+        <div class="listdesc">
+            <div class="clearitems">Clear</div>
+            <h2> Incomplete (<span></span>)</h2>
+        </div>
+        <ul id="incomplete">
+            <li>
+                <div class="checkContain">
+                    <div class="psuedoCheckBox"></div>
+                </div>
+                <div class="remove">Remove</div>
+                <div class="listContain">
+                    <p>Butter bread.</p>
+                </div>
+            </li>
+            <li>
+                <div class="checkContain">
+                    <div class="psuedoCheckBox"></div>
+                </div>
+                <div class="remove">Remove</div>
+                <div class="listContain">
+                    <p>Savour bread.</p>
+                </div>
+            </li>
+        </ul>
+        <div id="break"></div>
+        <!-- Complete Checklist Items -->
+        <div class="listdesc">
+            <div class="clearitems">Clear</div>
+             <h2> Complete (<span></span>)</h2>
+
+        </div>
+        <ul id="complete">
+            <li>
+                <div class="checkContain checkComplete"></div>
+                <div class="listContain listComplete">
+                    <p>Buy bread.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- Item Entry -->
+    <div id="itemEntry">
+        <input id="add" type="submit" value="Add">
+        <div id="inputBox">
+            <input id="userEntry" type="text" name="list item" placeholder="Add your checklist item here!">
+        </div>
+
+    </div>
+    <footer>
+        <!--&copy; Zania Barnum, 2014-->
+    </footer>
+</body>
+
+</html>
